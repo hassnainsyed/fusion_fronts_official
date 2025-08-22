@@ -36,8 +36,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            At FusionFronts, we blend modern design with cutting-edge frontend development 
-            to deliver high-impact digital solutions for clients worldwide.
+          At FusionFronts, we provide clients all over the world with high-impact digital solutions by fusing advanced development with modern design.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -65,7 +64,7 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="text-center animate-slide-up">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">35+</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="text-center animate-slide-up">
