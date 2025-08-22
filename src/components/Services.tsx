@@ -6,13 +6,18 @@ const Services = () => {
   const services = [
     {
       icon: <Palette className="h-12 w-12 text-primary" />,
-      title: "Graphic Design",
-      description: "Creative logos, brand identity, and marketing assets that make your business stand out in the crowd."
+      title: "Software Development",
+      description: "Custom web and mobile applications built with modern technologies to streamline workflows, enhance user experiences, and scale your business."
     },
     {
       icon: <Code className="h-12 w-12 text-accent" />,
       title: "Frontend Development",
-      description: "Modern React.js applications with responsive design and cutting-edge development practices."
+      description: "Modern applications with responsive design and cutting-edge development practices."
+    },
+    {
+      icon: <Palette className="h-12 w-12 text-primary" />,
+      title: "Graphic Design",
+      description: "Creative logos, brand identity, and marketing assets that make your business stand out in the crowd."
     },
     {
       icon: <Layers className="h-12 w-12 text-primary" />,
@@ -29,11 +34,6 @@ const Services = () => {
       title: "Mobile-First Design",
       description: "Responsive designs that work perfectly across all devices and screen sizes."
     },
-    {
-      icon: <Zap className="h-12 w-12 text-accent" />,
-      title: "Design-to-Code",
-      description: "Pixel-perfect conversion of designs to functional, optimized code with attention to detail."
-    }
   ];
 
   return (
