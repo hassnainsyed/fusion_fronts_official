@@ -1,171 +1,129 @@
+import { 
+  FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs 
+} from "react-icons/fa";
+import { 
+  SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails, 
+} from "react-icons/si";
+
 const TechStack = () => {
-    const technologies = [
-      {
-        name: "React.js",
-        category: "Frontend Framework",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-            <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
-            <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-          </svg>
-        )
-      },
-      {
-        name: "TypeScript",
-        category: "Programming Language",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Tailwind CSS",
-        category: "CSS Framework",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Next.js",
-        category: "React Framework",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 4.586 8.296 9.299 9.695.779.231 1.591.353 2.434.365.418.006.854-.003 1.315-.025 3.83-.152 7.156-2.182 9.258-5.812.311-.537.537-1.066.732-1.747.306-1.089.306-2.254 0-3.343-.306-1.089-.537-1.618-.732-1.747C20.007 2.182 16.681.152 12.851.025A19.278 19.278 0 0 0 11.572 0zM9.443 3.89c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 5.162c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 6.434c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 7.706c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 8.978c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 10.25c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 11.522c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 12.794c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 14.066c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 15.338c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 16.61c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 17.882c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 19.154c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zM9.443 20.426c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012zm5.15 0c.263 0 .394.003.394.012 0 .009-.131.012-.394.012s-.394-.003-.394-.012c0-.009.131-.012.394-.012z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Node.js",
-        category: "Runtime Environment",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247L1.809,18.422C1.291,18.14,0.9,17.678,0.9,17.159V6.841 c0-0.52,0.391-0.981,0.909-1.263l9.267-5.331c0.557-0.321,1.287-0.321,1.844,0l9.267,5.331c0.518,0.282,0.909,0.743,0.909,1.263 v10.318c0,0.52-0.391,0.981-0.909,1.263l-9.267,5.331C12.639,23.916,12.319,24,11.998,24z M22.194,17.159L12.927,22.49 c-0.185,0.106-0.334,0.106-0.519,0L2.141,17.159V6.841l10.267,5.331c0.185,0.106,0.334,0.106,0.519,0L22.194,6.841V17.159z M12,16.5 c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S14.206,16.5,12,16.5z M12,10.5c-1.103,0-2,0.897-2,2s0.897,2,2,2s2-0.897,2-2 S13.103,10.5,12,10.5z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Figma",
-        category: "Design Tool",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 5.568c.378 0 .732.147 1 .415l-1 1.415c-.268-.268-.622-.415-1-.415-.378 0-.732.147-1 .415l-1-1.415c.268-.268.622-.415 1-.415zm-11.136 0c.378 0 .732.147 1 .415l-1 1.415c-.268-.268-.622-.415-1-.415-.378 0-.732.147-1 .415l-1-1.415c.268-.268.622-.415 1-.415zm5.568 5.568c.378 0 .732.147 1 .415l-1 1.415c-.268-.268-.622-.415-1-.415-.378 0-.732.147-1 .415l-1-1.415c.268-.268.622-.415 1-.415zm0 5.568c.378 0 .732.147 1 .415l-1 1.415c-.268-.268-.622-.415-1-.415-.378 0-.732.147-1 .415l-1-1.415c.268-.268.622-.415 1-.415z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Adobe Creative Suite",
-        category: "Design Suite",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0 3c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm0 2c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Git",
-        category: "Version Control",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23.546 10.93 13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 3.092l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.182.383-.316.605-.402V8.835c-.217-.086-.424-.203-.6-.348L7.636 10.96l.006.006c-.624.624-1.624.624-2.248 0L.454 10.93c-.603-.604-.603-1.582 0-2.188L10.93.452c.604-.603 1.582-.603 2.188 0l10.428 10.29c.604.603.604 1.582 0 2.188z"/>
-          </svg>
-        )
-      },
-      {
-        name: "Vite",
-        category: "Build Tool",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0 3c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm0 2c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5z"/>
-          </svg>
-        )
-      },
-      {
-        name: "HTML5",
-        category: "Markup Language",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
-          </svg>
-        )
-      },
-      {
-        name: "CSS3",
-        category: "Styling",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
-          </svg>
-        )
-      },
-      {
-        name: "JavaScript",
-        category: "Programming Language",
-        logo: (
-          <svg className="w-12 h-12" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.414-2.25-.18-3.541-1.125-3.541-1.125l-.39.51c.405.675 1.125 1.23 1.8 1.545 2.205.75 4.471.645 5.026-.405.555-1.05.27-2.205-.405-2.205zM8.25 12.75c-.555 0-.975-.42-.975-.975s.42-.975.975-.975.975.42.975.975-.42.975-.975.975z"/>
-          </svg>
-        )
-      }
-    ];
-  
-    return (
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our <span className="bg-gradient-primary bg-clip-text text-transparent">Tech Stack</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We use the latest technologies and tools to deliver cutting-edge solutions that scale with your business.
-            </p>
-          </div>
-  
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {technologies.map((tech, index) => (
-              <div 
-                key={index}
-                className="text-center p-6 rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-medium group cursor-pointer bg-card"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 text-primary">
-                  {tech.logo}
-                </div>
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                  {tech.name}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {tech.category}
-                </p>
+
+  const technologies = [
+    {
+      name: "React.js",
+      category: "Frontend Framework",
+      logo: <FaReact className="w-12 h-12 text-sky-500" />
+    },
+    {
+      name: "TypeScript",
+      category: "Programming Language",
+      logo: <SiTypescript className="w-12 h-12 text-blue-600" />
+    },
+    {
+      name: "Tailwind CSS",
+      category: "CSS Framework",
+      logo: <SiTailwindcss className="w-12 h-12 text-sky-400" />
+    },
+    {
+      name: "Next.js",
+      category: "React Framework",
+      logo: <SiNextdotjs className="w-12 h-12 text-black dark:text-white" />
+    },
+    {
+      name: "Node.js",
+      category: "Runtime Environment",
+      logo: <FaNodeJs className="w-12 h-12 text-green-600" />
+    },
+    {
+      name: "Ruby on Rails",
+      category: "Backend Framework",
+      logo: <SiRubyonrails className="w-12 h-12 text-red-600" />
+    },
+    {
+      name: "Figma",
+      category: "Design Tool",
+      logo: <FaFigma className="w-12 h-12 text-pink-500" />
+    },
+    {
+      name: "Git",
+      category: "Version Control",
+      logo: <FaGitAlt className="w-12 h-12 text-orange-600" />
+    },
+    {
+      name: "Vite",
+      category: "Build Tool",
+      logo: <SiVite className="w-12 h-12 text-purple-500" />
+    },
+    {
+      name: "HTML5",
+      category: "Markup Language",
+      logo: <FaHtml5 className="w-12 h-12 text-orange-500" />
+    },
+    {
+      name: "CSS3",
+      category: "Styling",
+      logo: <FaCss3Alt className="w-12 h-12 text-blue-500" />
+    },
+    {
+      name: "JavaScript",
+      category: "Programming Language",
+      logo: <FaJs className="w-12 h-12 text-yellow-500" />
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Our <span className="bg-gradient-primary bg-clip-text text-transparent">Tech Stack</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            We use the latest technologies and tools to deliver cutting-edge solutions that scale with your business.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {technologies.map((tech, index) => (
+            <div 
+              key={index}
+              className="text-center p-6 rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-medium group cursor-pointer bg-card"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300 text-primary">
+                {tech.logo}
               </div>
-            ))}
-          </div>
-  
-          <div className="mt-16 text-center">
-            <p className="text-lg text-muted-foreground mb-8">
-              Always learning and adapting to new technologies to stay ahead of the curve.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
-                Modern Stack
-              </span>
-              <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm border border-accent/20">
-                Best Practices
-              </span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
-                Performance Focused
-              </span>
-              <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm border border-accent/20">
-                Scalable Solutions
-              </span>
+              <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                {tech.name}
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                {tech.category}
+              </p>
             </div>
+          ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-lg text-muted-foreground mb-8">
+            Always learning and adapting to new technologies to stay ahead of the curve.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
+              Modern Stack
+            </span>
+            <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm border border-accent/20">
+              Best Practices
+            </span>
+            <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
+              Performance Focused
+            </span>
+            <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm border border-accent/20">
+              Scalable Solutions
+            </span>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default TechStack;
+      </div>
+    </section>
+  );
+};
+
+export default TechStack;
