@@ -5,56 +5,38 @@ import portfolio1 from '@/assets/portfolio-1.jpg';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      role: "CEO",
-      content:
-        "FusionFronts delivered exactly what we needed - a modern, responsive website that perfectly represents our brand. Their attention to detail and professionalism exceeded our expectations.",
-      rating: 5,
-      image: portfolio1,
-    },
-    {
-      name: "Michael Chen",
-      company: "Digital Solutions Co.",
-      role: "CTO",
+      name: "Zahid Ali",
+      company: "Islam 360",
+      role: "Founder & CEO",
       content:
         "The team at FusionFronts transformed our outdated platform into a cutting-edge application. Their technical expertise and creative approach made all the difference.",
       rating: 5,
       image: portfolio1,
     },
     {
-      name: "Emily Rodriguez",
-      company: "Creative Agency",
-      role: "Design Director",
+      name: "Syed Hammas Bukhari",
+      company: "BinaryNext Inc.",
+      role: "CEO",
       content:
-        "Working with FusionFronts was a game-changer for our business. They created a comprehensive branding package that truly captured our vision and elevated our market presence.",
+        "FusionFronts delivered exactly what we needed - a modern, responsive website that perfectly represents our brand.",
       rating: 5,
       image: portfolio1,
     },
     {
-      name: "David Thompson",
+      name: "Umair Ahmad",
+      company: "WeCreative Agency",
+      role: "Manager",
+      content:
+        "Highly Recommended.",
+      rating: 5,
+      image: portfolio1,
+    },
+    {
+      name: "David Smith",
       company: "E-commerce Plus",
       role: "Founder",
       content:
         "Our marketplace platform has been a huge success thanks to FusionFronts. The user experience they designed is intuitive and the functionality is flawless.",
-      rating: 5,
-      image: portfolio1,
-    },
-    {
-      name: "Lisa Wang",
-      company: "Healthcare Innovations",
-      role: "Product Manager",
-      content:
-        "FusionFronts understood our complex requirements and delivered a solution that not only met but exceeded our goals. Their expertise in UI/UX design is outstanding.",
-      rating: 5,
-      image: portfolio1,
-    },
-    {
-      name: "Alex Kumar",
-      company: "Startup Ventures",
-      role: "Operations Director",
-      content:
-        "From concept to launch, FusionFronts guided us through every step. Their strategic approach and technical skills helped us launch successfully in a competitive market.",
       rating: 5,
       image: portfolio1,
     },
