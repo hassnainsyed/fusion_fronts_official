@@ -62,7 +62,7 @@ const Contact = () => {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
       details: "+1 (555) 123-4567",
-      description: "Mon-Fri from 9am to 6pm"
+      description: "Feel free to call any time"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
