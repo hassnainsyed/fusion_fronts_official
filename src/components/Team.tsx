@@ -1,38 +1,42 @@
 import { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useRef } from "react";
+import Hassnain from '@/assets/syed_hassnain.jpg';
+import Hussain from '@/assets/hussain.jpg';
 
 const Team = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-    loop: true,
-    skipSnaps: false,
-    dragFree: true,
-  });
-
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
+  const autoplay = useRef(
+    Autoplay({ delay: 1500, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      loop: true,
+      skipSnaps: false,
+      dragFree: true,
+    },
+    [autoplay.current]
   );
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   const teamMembers = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Syed Hassnain",
       designation: "CEO & Founder",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      image: Hassnain,
       linkedin: "#",
       twitter: "#"
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Raza Haider",
       designation: "CTO & Lead Developer",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
       linkedin: "#",
@@ -40,23 +44,23 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      designation: "Head of Design",
+      name: "Zahid Ali",
+      designation: "Senior Full-Stack Developer",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
       linkedin: "#",
       twitter: "#"
     },
     {
       id: 4,
-      name: "David Kim",
-      designation: "Senior Full-Stack Developer",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      name: "Syed Hussain Iqrar",
+      designation: "Senior Frontend Developer",
+      image: Hussain,
       linkedin: "#",
       twitter: "#"
     },
     {
       id: 5,
-      name: "Lisa Thompson",
+      name: "Armughan Javed",
       designation: "Product Manager",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
       linkedin: "#",
@@ -64,34 +68,18 @@ const Team = () => {
     },
     {
       id: 6,
-      name: "Alex Morgan",
-      designation: "UX/UI Designer",
+      name: "Rafay Shafqat",
+      designation: "AI Engineer",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
       linkedin: "#",
       twitter: "#"
     },
-    {
-      id: 7,
-      name: "Rachel Green",
-      designation: "Frontend Developer",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      twitter: "#"
-    },
-    {
-      id: 8,
-      name: "James Wilson",
-      designation: "Backend Developer",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      twitter: "#"
-    }
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section id="team" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+      <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Meet Our <span className="bg-gradient-primary bg-clip-text text-transparent">Team</span>
           </h2>
@@ -112,7 +100,6 @@ const Team = () => {
               <ChevronLeft className="h-6 w-6" />
             </Button>
           </div>
-
           <div className="absolute -right-4 top-1/2 -translate-y-1/2 z-10">
             <Button
               variant="outline"
@@ -124,14 +111,11 @@ const Team = () => {
             </Button>
           </div>
 
-          {/* Carousel Container */}
+          {/* Embla Carousel */}
           <div className="embla overflow-hidden" ref={emblaRef}>
             <div className="embla__container flex gap-6">
               {teamMembers.map((member) => (
-                <div
-                  key={member.id}
-                  className="embla__slide flex-[0_0_300px] min-w-0"
-                >
+                <div key={member.id} className="embla__slide flex-[0_0_300px] min-w-0">
                   <div className="group relative bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-medium">
                     <div className="relative mb-6">
                       <div className="w-full h-64 rounded-lg overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
