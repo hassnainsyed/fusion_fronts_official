@@ -31,7 +31,7 @@ const Team = () => {
       name: "Syed Hassnain",
       designation: "CEO & Founder",
       image: Hassnain,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/syed-hassnain/",
       twitter: "#"
     },
     {
@@ -39,15 +39,7 @@ const Team = () => {
       name: "Raza Haider",
       designation: "CTO & Lead Developer",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      twitter: "#"
-    },
-    {
-      id: 3,
-      name: "Zahid Ali",
-      designation: "Senior Full-Stack Developer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/razah1214/",
       twitter: "#"
     },
     {
@@ -55,7 +47,7 @@ const Team = () => {
       name: "Syed Hussain Iqrar",
       designation: "Senior Frontend Developer",
       image: Hussain,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/syed-hussain-iqrar-71388b236/",
       twitter: "#"
     },
     {
@@ -63,7 +55,7 @@ const Team = () => {
       name: "Armughan Javed",
       designation: "Product Manager",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
       twitter: "#"
     },
     {
@@ -71,7 +63,7 @@ const Team = () => {
       name: "Rafay Shafqat",
       designation: "AI Engineer",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/rafay-khokhar/",
       twitter: "#"
     },
   ];
