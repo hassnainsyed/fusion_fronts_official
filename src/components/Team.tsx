@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 import Hassnain from '@/assets/syed_hassnain.jpg';
 import Hussain from '@/assets/hussain.jpg';
+import Raza from '@/assets/razah.jpeg';
+import Armughan from '@/assets/armughan.jpeg';
+import Rafay from '@/assets/rafay.jpeg';
 
 const Team = () => {
   const autoplay = useRef(
@@ -38,12 +41,12 @@ const Team = () => {
       id: 2,
       name: "Raza Haider",
       designation: "CTO & Lead Developer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: Raza,
       linkedin: "https://www.linkedin.com/in/razah1214/",
       twitter: "#"
     },
     {
-      id: 4,
+      id: 3,
       name: "Syed Hussain Iqrar",
       designation: "Senior Frontend Developer",
       image: Hussain,
@@ -51,18 +54,18 @@ const Team = () => {
       twitter: "#"
     },
     {
-      id: 5,
+      id: 4,
       name: "Armughan Javed",
       designation: "Product Manager",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
+      image: Armughan,
       linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
       twitter: "#"
     },
     {
-      id: 6,
+      id: 5,
       name: "Rafay Shafqat",
       designation: "AI Engineer",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+      image: Rafay,
       linkedin: "https://www.linkedin.com/in/rafay-khokhar/",
       twitter: "#"
     },
