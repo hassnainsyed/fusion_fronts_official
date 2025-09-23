@@ -1,4 +1,4 @@
-import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa6";
 import { 
   SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails, 
 } from "react-icons/si";
