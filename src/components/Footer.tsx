@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { Github, Twitter, Linkedin, Instagram, ArrowUp } from 'lucide-react';
 import { Button } from './ui/button';
+import LegalModal from "./ui/legal-modal";
 
 const Footer = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalContent, setModalContent] = useState("");
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -13,12 +19,23 @@ const Footer = () => {
     }
   };
 
+  const openModal = (type: "privacy" | "terms") => {
+    if (type === "privacy") {
+      setModalTitle("Privacy Policy");
+      setModalContent(`This is our privacy policy.\n\nWe respect your data and do not share it with third parties.`);
+    } else {
+      setModalTitle("Terms of Service");
+      setModalContent(`These are our terms of service.\n\nBy using our services, you agree to comply with all applicable laws.`);
+    }
+    setModalOpen(true);
+  };
+
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="mb-6">
@@ -114,10 +131,16 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-6">
-            <button className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <button
+              className="text-muted-foreground hover:text-primary text-sm transition-colors"
+              onClick={() => openModal("privacy")}
+            >
               Privacy Policy
             </button>
-            <button className="text-muted-foreground hover:text-primary text-sm transition-colors">
+            <button
+              className="text-muted-foreground hover:text-primary text-sm transition-colors"
+              onClick={() => openModal("terms")}
+            >
               Terms of Service
             </button>
             <Button 
@@ -131,6 +154,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Legal Modal */}
+      <LegalModal
+        open={modalOpen}
+        title={modalTitle}
+        content={modalContent}
+        onClose={() => setModalOpen(false)}
+      />
     </footer>
   );
 };
