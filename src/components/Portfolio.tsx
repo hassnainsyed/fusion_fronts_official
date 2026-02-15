@@ -3,7 +3,6 @@ import { Button } from './ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import portfolio1 from '@/assets/portfolio-1.jpg';
 import namaz360 from  '@/assets/namaz360.png'
-import reactToastify from '@/assets/react-toastify.png'
 import cardMarket from '@/assets/cardMarket.png'
 
 const Portfolio = () => {
@@ -12,7 +11,7 @@ const Portfolio = () => {
       title: "React Native Toastify",
       description:
         "A highly popular React Native toast notification library with over 20 million downloads worldwide, offering customizable and user-friendly alerts for mobile apps.",
-      image: reactToastify,
+      image: portfolio1,
       tags: ["React Native", "Library", "UI/UX", "Notifications"],
       liveUrl: "#",
       githubUrl: "#",
