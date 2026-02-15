@@ -2,42 +2,49 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Button } from './ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import portfolio1 from '@/assets/portfolio-1.jpg';
+import namaz360 from  '@/assets/namaz360.png'
+import reactToastify from '@/assets/react-toastify.png'
+import cardMarket from '@/assets/cardMarket.png'
 
 const Portfolio = () => {
   const projects = [
     {
+      title: "React Native Toastify",
+      description:
+        "A highly popular React Native toast notification library with over 20 million downloads worldwide, offering customizable and user-friendly alerts for mobile apps.",
+      image: reactToastify,
+      tags: ["React Native", "Library", "UI/UX", "Notifications"],
+      liveUrl: "#",
+      githubUrl: "#",
+    },
+    {
+      title: "Namaz 360 App",
+      description:
+        "A full-fledged Islamic app with namaz alerts, Quran access, Hadith collections, and Islamic books management — designed for global users.",
+      image: namaz360,
+      tags: ["React Native", "Mobile App", "Islamic", "Productivity"],
+      liveUrl: "#",
+      githubUrl: "#",
+    },
+    {
       title: "Card Marketplace Platform",
-      description: "A full-featured marketplace with buy/sell interface, user dashboard, and responsive UI. Built with React.js and modern design principles.",
-      image: portfolio1,
+      description:
+        "A full-featured marketplace with buy/sell interface, user dashboard, and responsive UI. Built with React.js and modern design principles.",
+      image: cardMarket,
       tags: ["React.js", "UI/UX", "E-commerce", "Responsive"],
       liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Business Website Suite",
-      description: "Professional websites for startups and service-based businesses with modern design and optimal performance.",
-      image: portfolio1,
-      tags: ["Web Design", "Branding", "Frontend", "SEO"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Complete Branding Package",
-      description: "Comprehensive brand identity including logos, social kits, and marketing materials for growing businesses.",
-      image: portfolio1,
-      tags: ["Branding", "Logo Design", "Marketing", "Identity"],
-      liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "#",
     },
     {
       title: "SaaS Dashboard Design",
-      description: "Interactive UI/UX designs for SaaS dashboards and mobile apps with focus on user experience and functionality.",
+      description:
+        "Interactive UI/UX designs for SaaS dashboards and mobile apps with focus on user experience and functionality.",
       image: portfolio1,
       tags: ["UI/UX", "Dashboard", "SaaS", "Mobile"],
       liveUrl: "#",
-      githubUrl: "#"
-    }
-  ];
+      githubUrl: "#",
+    },
+  ];  
 
   return (
     <section id="portfolio" className="py-24 bg-secondary/50">
@@ -100,11 +107,11 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button variant="hero" size="lg">
             View All Projects
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
