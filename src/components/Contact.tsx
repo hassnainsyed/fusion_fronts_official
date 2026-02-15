@@ -72,7 +72,7 @@ const Contact = () => {
     },
     {
       icon: <Clock className="h-6 w-6" />,
-      title: "Response Time",
+      title: "Response",
       details: "Within 24 hours",
       description: "We're quick to respond"
     }
