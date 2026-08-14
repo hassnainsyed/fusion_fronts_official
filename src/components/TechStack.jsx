@@ -1,11 +1,31 @@
-import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa6";
+import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaRobot } from "react-icons/fa6";
 import { 
-  SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails, 
+  SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails, SiOpenai, SiPython, SiTensorflow,
 } from "react-icons/si";
 
 const TechStack = () => {
 
   const technologies = [
+    {
+      name: "OpenAI API",
+      category: "AI Integration",
+      logo: <SiOpenai className="w-12 h-12 text-emerald-500" />
+    },
+    {
+      name: "LangChain",
+      category: "AI Framework",
+      logo: <FaRobot className="w-12 h-12 text-purple-500" />
+    },
+    {
+      name: "Python",
+      category: "AI & Machine Learning",
+      logo: <SiPython className="w-12 h-12 text-yellow-500" />
+    },
+    {
+      name: "TensorFlow",
+      category: "Machine Learning",
+      logo: <SiTensorflow className="w-12 h-12 text-orange-500" />
+    },
     {
       name: "React.js",
       category: "Frontend Framework",
@@ -76,7 +96,7 @@ const TechStack = () => {
             Our <span className="bg-gradient-primary bg-clip-text text-transparent">Tech Stack</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We use the latest technologies and tools to deliver cutting-edge solutions that scale with your business.
+            We use the latest technologies, frameworks, and AI tools to deliver cutting-edge, intelligent solutions that scale with your business.
           </p>
         </div>
 
@@ -102,9 +122,12 @@ const TechStack = () => {
 
         <div className="mt-16 text-center">
           <p className="text-lg text-muted-foreground mb-8">
-            Always learning and adapting to new technologies to stay ahead of the curve.
+            Always learning and adapting to new technologies — especially in AI — to stay ahead of the curve.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm border border-accent/20">
+              AI-Powered
+            </span>
             <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm border border-primary/20">
               Modern Stack
             </span>
