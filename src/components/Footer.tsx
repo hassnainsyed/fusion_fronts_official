@@ -44,8 +44,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-md">
-              Your creative and development partner. We blend modern design with cutting-edge 
-              frontend development to deliver high-impact digital solutions for clients worldwide.
+              Your creative and AI-powered development partner. We blend intelligent design with cutting-edge 
+              AI-driven development to deliver high-impact digital solutions for clients worldwide.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" className="p-2">
@@ -114,6 +114,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-3 text-muted-foreground">
+              <li>AI & Automation Solutions</li>
               <li>Graphic Design</li>
               <li>Frontend Development</li>
               <li>UI/UX Design</li>
