@@ -1,7 +1,8 @@
-import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaRobot } from "react-icons/fa6";
+import { FaReact, FaNodeJs, FaFigma, FaGitAlt, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa6";
 import { 
-  SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails, SiOpenai, SiPython, SiTensorflow,
+  SiTypescript, SiTailwindcss, SiNextdotjs, SiVite, SiRubyonrails,
 } from "react-icons/si";
+import { Bot, Sparkles, Brain, Cpu } from "lucide-react";
 
 const TechStack = () => {
 
@@ -9,22 +10,22 @@ const TechStack = () => {
     {
       name: "OpenAI API",
       category: "AI Integration",
-      logo: <SiOpenai className="w-12 h-12 text-emerald-500" />
+      logo: <Bot className="w-12 h-12 text-emerald-500" />
     },
     {
       name: "LangChain",
       category: "AI Framework",
-      logo: <FaRobot className="w-12 h-12 text-purple-500" />
+      logo: <Sparkles className="w-12 h-12 text-purple-500" />
     },
     {
       name: "Python",
       category: "AI & Machine Learning",
-      logo: <SiPython className="w-12 h-12 text-yellow-500" />
+      logo: <Brain className="w-12 h-12 text-yellow-500" />
     },
     {
       name: "TensorFlow",
       category: "Machine Learning",
-      logo: <SiTensorflow className="w-12 h-12 text-orange-500" />
+      logo: <Cpu className="w-12 h-12 text-orange-500" />
     },
     {
       name: "React.js",
