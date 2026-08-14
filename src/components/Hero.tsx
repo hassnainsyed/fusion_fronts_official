@@ -152,19 +152,19 @@ const Hero = () => {
         className="absolute inset-0 -z-10 overflow-hidden pointer-events-none"
       />
 
-      {/* ============ CONTENT (unchanged) ============ */}
+      {/* ============ CONTENT ============ */}
       <div className="relative container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight mt-20 md:mt-0">
             Your Creative &{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Development
+              AI-Powered
             </span>{' '}
-            Partner
+            Development Partner
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            At FusionFronts, we provide clients all over the world with high-impact digital solutions by fusing advanced development with modern design.
+            At FusionFronts, we fuse artificial intelligence with modern design and advanced development to build intelligent, high-impact digital solutions for clients around the world.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
