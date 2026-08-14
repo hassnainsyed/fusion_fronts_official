@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Hassnain from '@/assets/syed_hassnain.jpg';
+import Hassnain from '@/assets/hassnain_syed.png';
 import Hussain from '@/assets/hussain.jpg';
 import Raza from '@/assets/razah.jpeg';
 import Armughan from '@/assets/armughan.jpeg';
