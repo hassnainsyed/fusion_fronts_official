@@ -86,7 +86,7 @@ const Contact = () => {
             Get In <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Let's discuss how we can help bring your vision to life.
+            Ready to start your next AI-powered project? Let's discuss how we can help bring your vision to life.
           </p>
         </div>
 
@@ -178,8 +178,8 @@ const Contact = () => {
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-4">Let's Start a Conversation</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you need a complete rebrand, a new website, or ongoing development support, 
-                we're here to help. Our team is passionate about creating digital solutions that 
+                Whether you need a complete rebrand, a new website, or an AI-powered application, 
+                we're here to help. Our team is passionate about creating intelligent digital solutions that 
                 drive real business results.
               </p>
             </div>
@@ -206,6 +206,7 @@ const Contact = () => {
             <div className="mt-8 p-6 bg-gradient-secondary rounded-lg border border-border">
               <h4 className="font-semibold text-lg mb-3">Why Choose FusionFronts?</h4>
               <ul className="space-y-2 text-muted-foreground">
+                <li>✅ AI-powered solutions & automation</li>
                 <li>✅ 100% client satisfaction rate</li>
                 <li>✅ Fast turnaround times</li>
                 <li>✅ Transparent communication</li>
