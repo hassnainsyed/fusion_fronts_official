@@ -1,12 +1,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { CheckCircle, Target, Users, Award } from 'lucide-react';
+import { CheckCircle, Target, Users, Award, Sparkles } from 'lucide-react';
 
 const About = () => {
   const values = [
     {
+      icon: <Sparkles className="h-8 w-8 text-accent" />,
+      title: "AI-Driven Innovation",
+      description: "We build with artificial intelligence at the core — from intelligent automation to AI-enhanced user experiences that adapt to your customers."
+    },
+    {
       icon: <Target className="h-8 w-8 text-primary" />,
       title: "Mission-Driven",
-      description: "Committed to delivering exceptional digital solutions that drive business growth and success."
+      description: "Committed to delivering exceptional, AI-powered digital solutions that drive business growth and success."
     },
     {
       icon: <Users className="h-8 w-8 text-accent" />,
@@ -16,13 +21,14 @@ const About = () => {
     {
       icon: <Award className="h-8 w-8 text-primary" />,
       title: "Quality First",
-      description: "Maintaining the highest standards in every project with attention to detail and excellence."
+      description: "Maintaining the highest standards in every project, blending AI precision with human craft and attention to detail."
     }
   ];
 
   const achievements = [
     "50+ successful projects delivered worldwide",
     "100% client satisfaction rate maintained",
+    "AI-powered automation and intelligent chatbot integrations for growing businesses",
     "Full-featured card marketplace platform development",
     "Complete branding packages for growing businesses",
     "Interactive SaaS dashboards and mobile app designs",
@@ -37,8 +43,9 @@ const About = () => {
             About <span className="bg-gradient-primary bg-clip-text text-transparent">FusionFronts</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're a creative agency that believes in the power of quality, creativity, and results. 
-            With years of industry experience, we've built a reputation for delivering digital solutions that matter.
+            We're an AI-driven creative and technology agency that believes in the power of intelligent design, 
+            automation, and results. With years of industry experience, we've built a reputation for delivering 
+            AI-powered digital solutions that matter.
           </p>
         </div>
 
@@ -46,15 +53,16 @@ const About = () => {
           <div>
             <h3 className="text-3xl font-bold mb-6">Our Story</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              FusionFronts was founded with a simple vision: to blend modern design with cutting-edge 
-              frontend development to create digital experiences that truly make a difference. Over the years, 
-              we've grown from a small team of passionate developers and designers into a trusted partner 
-              for businesses worldwide.
+              FusionFronts was founded with a simple vision: to fuse artificial intelligence with modern design and 
+              cutting-edge development to create digital experiences that truly make a difference. Over the years, 
+              we've grown from a small team of passionate developers, designers, and AI engineers into a trusted 
+              partner for businesses worldwide.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Our approach combines creativity with technical expertise, ensuring that every project we 
-              deliver not only looks stunning but also performs exceptionally. From graphic design and 
-              branding to complex web applications, we're here to bring your vision to life.
+              Our approach combines AI-driven innovation with technical expertise, ensuring that every project we 
+              deliver is not only intelligent and adaptive but also performs exceptionally. From AI-powered 
+              applications, automation, and machine learning integrations to branding and complex web platforms, 
+              we're here to bring your vision to life.
             </p>
 
             <div className="space-y-3">
@@ -93,16 +101,19 @@ const About = () => {
           <h3 className="text-2xl font-bold mb-4">Ready to Work Together?</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Whether you're a startup, small business, or entrepreneur, FusionFronts is your trusted 
-            partner for digital success. Let's create something amazing together.
+            AI-powered partner for digital success. Let's create something amazing together.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm border border-primary/30">
-              Creative Excellence
+              AI-Powered Innovation
             </span>
             <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm border border-accent/30">
-              Technical Expertise
+              Creative Excellence
             </span>
             <span className="px-4 py-2 bg-primary/20 text-primary rounded-full text-sm border border-primary/30">
+              Technical Expertise
+            </span>
+            <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm border border-accent/30">
               Proven Results
             </span>
           </div>
