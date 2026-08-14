@@ -52,7 +52,7 @@ const Industries = () => {
             Industries We <span className="bg-gradient-primary bg-clip-text text-transparent">Serve</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our expertise spans across multiple industries, delivering tailored solutions for diverse business needs.
+            Our expertise spans across multiple industries, delivering AI-powered, tailored solutions for diverse business needs.
           </p>
         </div>
 
