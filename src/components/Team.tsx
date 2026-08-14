@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import Hassnain from '@/assets/hassnain_syed.png';
 import Hussain from '@/assets/hussain.jpg';
 import Raza from '@/assets/razah.jpeg';
-import Armughan from '@/assets/armughan.jpeg';
+import Armughan from '@/assets/armughan_pic.jpeg';
 
 const Team = () => {
   const teamMembers = [
     {
       id: 1,
       name: "Syed Hassnain",
-      designation: "CEO & Founder",
+      designation: "CEO & Lead Developer",
       image: Hassnain,
       imagePosition: "top",
       linkedin: "https://www.linkedin.com/in/syed-hassnain/",
@@ -18,7 +18,7 @@ const Team = () => {
     {
       id: 2,
       name: "Raza Haider",
-      designation: "CTO & Lead Developer",
+      designation: "Senior Software Engineer",
       image: Raza,
       linkedin: "https://www.linkedin.com/in/razah1214/",
       twitter: "#"
@@ -26,7 +26,7 @@ const Team = () => {
     {
       id: 3,
       name: "Syed Hussain Iqrar",
-      designation: "Senior Frontend Developer",
+      designation: "Senior Software Engineer",
       image: Hussain,
       linkedin: "https://www.linkedin.com/in/syed-hussain-iqrar-71388b236/",
       twitter: "#"
@@ -34,8 +34,9 @@ const Team = () => {
     {
       id: 4,
       name: "Armughan Javed",
-      designation: "AI Engineer",
+      designation: "Senior AI Engineer",
       image: Armughan,
+      imagePosition: "top",
       linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
       twitter: "#"
     },
