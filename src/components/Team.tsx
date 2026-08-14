@@ -28,6 +28,7 @@ const Team = () => {
       name: "Syed Hussain Iqrar",
       designation: "Senior Software Engineer",
       image: Hussain,
+      imagePosition: "top",
       linkedin: "https://www.linkedin.com/in/syed-hussain-iqrar-71388b236/",
       twitter: "#"
     },
