@@ -9,7 +9,7 @@ const Team = () => {
     {
       id: 1,
       name: "Syed Hassnain",
-      designation: "CEO & Founder",
+      designation: "CEO & Lead Engineer",
       image: Hassnain,
       linkedin: "https://www.linkedin.com/in/syed-hassnain/",
       twitter: "#"
@@ -17,7 +17,7 @@ const Team = () => {
     {
       id: 2,
       name: "Raza Haider",
-      designation: "CTO & Lead Developer",
+      designation: "Senior Software Engineer",
       image: Raza,
       linkedin: "https://www.linkedin.com/in/razah1214/",
       twitter: "#"
@@ -25,7 +25,7 @@ const Team = () => {
     {
       id: 3,
       name: "Syed Hussain Iqrar",
-      designation: "Senior Frontend Developer",
+      designation: "Senior Software Engineer",
       image: Hussain,
       linkedin: "https://www.linkedin.com/in/syed-hussain-iqrar-71388b236/",
       twitter: "#"
@@ -33,7 +33,7 @@ const Team = () => {
     {
       id: 4,
       name: "Armughan Javed",
-      designation: "AI Engineer",
+      designation: "Senior AI Engineer",
       image: Armughan,
       linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
       twitter: "#"
