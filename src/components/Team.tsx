@@ -9,15 +9,16 @@ const Team = () => {
     {
       id: 1,
       name: "Syed Hassnain",
-      designation: "CEO & Lead Engineer",
+      designation: "CEO & Founder",
       image: Hassnain,
+      imagePosition: "top",
       linkedin: "https://www.linkedin.com/in/syed-hassnain/",
       twitter: "#"
     },
     {
       id: 2,
       name: "Raza Haider",
-      designation: "Senior Software Engineer",
+      designation: "CTO & Lead Developer",
       image: Raza,
       linkedin: "https://www.linkedin.com/in/razah1214/",
       twitter: "#"
@@ -25,7 +26,7 @@ const Team = () => {
     {
       id: 3,
       name: "Syed Hussain Iqrar",
-      designation: "Senior Software Engineer",
+      designation: "Senior Frontend Developer",
       image: Hussain,
       linkedin: "https://www.linkedin.com/in/syed-hussain-iqrar-71388b236/",
       twitter: "#"
@@ -33,7 +34,7 @@ const Team = () => {
     {
       id: 4,
       name: "Armughan Javed",
-      designation: "Senior AI Engineer",
+      designation: "AI Engineer",
       image: Armughan,
       linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
       twitter: "#"
@@ -61,6 +62,7 @@ const Team = () => {
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: member.imagePosition ?? "center" }}
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
