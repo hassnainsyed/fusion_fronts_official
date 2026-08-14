@@ -120,3 +120,36 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* ============================================================
+   FusionFronts animated Hero — append to bottom of src/index.css
+   ============================================================ */
+
+@keyframes ff-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(90px, 40px) scale(1.08); }
+  66%      { transform: translate(30px, 80px) scale(0.95); }
+}
+
+@keyframes ff-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(-70px, -60px) scale(1.1); }
+  66%      { transform: translate(-30px, -100px) scale(0.9); }
+}
+
+@keyframes ff-drift-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.35; }
+  50%      { transform: translate(-120px, 60px) scale(1.15); opacity: 0.5; }
+}
+
+@keyframes ff-shimmer {
+  0%   { transform: translate(-30%, -30%) rotate(0deg); }
+  100% { transform: translate(-30%, -30%) rotate(360deg); }
+}
+
+@keyframes ff-float-up {
+  0%   { transform: translateY(20px); opacity: 0; }
+  10%  { opacity: 0.8; }
+  90%  { opacity: 0.8; }
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
