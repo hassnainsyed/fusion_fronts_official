@@ -8,7 +8,6 @@ import Hassnain from '@/assets/syed_hassnain.jpg';
 import Hussain from '@/assets/hussain.jpg';
 import Raza from '@/assets/razah.jpeg';
 import Armughan from '@/assets/armughan.jpeg';
-import Rafay from '@/assets/rafay.jpeg';
 
 const Team = () => {
   const autoplay = useRef(
@@ -56,17 +55,9 @@ const Team = () => {
     {
       id: 4,
       name: "Armughan Javed",
-      designation: "Product Manager",
+      designation: "AI Engineer",
       image: Armughan,
       linkedin: "https://www.linkedin.com/in/m-armughan-javed-9674b81b6/",
-      twitter: "#"
-    },
-    {
-      id: 5,
-      name: "Rafay Shafqat",
-      designation: "AI Engineer",
-      image: Rafay,
-      linkedin: "https://www.linkedin.com/in/rafay-khokhar/",
       twitter: "#"
     },
   ];
